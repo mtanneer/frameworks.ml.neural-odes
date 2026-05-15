@@ -1,4 +1,4 @@
-.PHONY: setup install test-solver test-toy test-mnist test-realworld clean all
+.PHONY: setup install test-solver test-toy test-mnist test-realworld clean all dashboard
 
 PYTHON = .venv/bin/python
 SRC = src
@@ -61,3 +61,8 @@ clean:
 	rm -rf results/*.pt results/*.png
 
 all: install setup smoke toy-spiral
+
+# ── Dashboard ──────────────────────────────────────────────────────────────────
+
+dashboard:
+	$(PYTHON) webui/server.py
