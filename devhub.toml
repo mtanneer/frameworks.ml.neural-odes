@@ -1,0 +1,8 @@
+# devhub project manifest. Schema: ~/dev/tools.all.devhub/SCHEMA.md
+status = "maintenance"
+purpose = "From-scratch Neural ODE (Chen et al. 2018) with own ODE solvers and adjoint, plus ETT experiments"
+tags = ["ml", "coursework"]
+deploy = ""
+depends_on = []
+next = []
+# evidence: README.md, CLAUDE.md, _batch6.json
